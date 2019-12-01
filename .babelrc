@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "cwd": "babelrc",
+        "root": ["./src"],
+        "extensions": [".js", ".ios.js", ".android.js"],
+        "alias": {
+          "_assets": "./src/app/assets",
+          "_components": "./src/app/components",
+          "_containers": "./src/app/containers",
+          "_actions": "./src/app/actions",
+          "_reducers": "./src/app/reducers",
+          "_styles": "./src/app/styles",
+          "_utils": "./src/app/utils"
+        }
+      }
+    ]
+  ]
+}

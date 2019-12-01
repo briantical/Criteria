@@ -26,7 +26,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
+const Main = () => {
   useEffect(() => {
     SplashScreen.hide();
   }, []);
@@ -117,4 +117,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Main;
