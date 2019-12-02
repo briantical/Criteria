@@ -1,6 +1,15 @@
 import React from 'react';
+import {Provider} from 'react-redux';
+import store from '_store';
 
-import Main from './app/Main';
-const App = () => <Main />;
+import Index from './app/Index';
+
+const App = () => {
+  return (
+    <Provider store={store}>
+      <Index />
+    </Provider>
+  );
+};
 
 export default App;

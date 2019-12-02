@@ -4,11 +4,13 @@
     "paths": {
       "_assets": ["./src/app/assets/*"],
       "_components": ["./src/app/components/*"],
+      "_constants": ["./src/app/constants/*"],
       "_containers": ["./src/app/containers/*"],
       "_actions": ["./src/app/actions/*"],
       "_reducers": ["./src/app/reducers/*"],
       "_styles": ["./src/app/styles/*"],
-      "_utils": ["./src/app/utils/*"]
+      "_utils": ["./src/app/utils/*"],
+      "_store": ["./src/app/store/*"]
     }
   }
 }
