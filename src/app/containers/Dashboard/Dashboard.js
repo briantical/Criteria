@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {connect} from 'react-redux';
 
-import Drawer from './Drawer/Drawer';
+import Drawer from './Drawer';
 
 import {showDrawer} from '_actions';
 
@@ -20,10 +20,10 @@ export class Dashboard extends Component {
         <MenuDrawer
           open={drawer}
           drawerContent={<Drawer />}
-          drawerPercentage={45}
-          animationTime={250}
+          drawerPercentage={75}
+          animationTime={150}
           overlay={true}
-          opacity={0.4}>
+          opacity={0.1}>
           <TouchableOpacity onPress={this.toggleDrawer}>
             <Text>Open Drawer</Text>
           </TouchableOpacity>

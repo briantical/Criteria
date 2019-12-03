@@ -1,8 +1,15 @@
 import React, {Component} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, ScrollView} from 'react-native';
 import {connect} from 'react-redux';
 
 import {showDrawer} from '_actions';
+import styles from '_styles';
+import {
+  AccountDetails,
+  AppDetails,
+  OrderDetails,
+  DrawerHeader,
+} from './DrawerContent';
 
 export class Drawer extends Component {
   toggleDrawer = () => {
@@ -11,11 +18,14 @@ export class Drawer extends Component {
 
   render() {
     return (
-      <View>
-        <TouchableOpacity onPress={this.toggleDrawer}>
-          <Text>Close Drawer</Text>
-        </TouchableOpacity>
-      </View>
+      <ScrollView>
+        <View style={styles.drawer}>
+          <DrawerHeader />
+          <OrderDetails />
+          <AccountDetails />
+          <AppDetails />
+        </View>
+      </ScrollView>
     );
   }
 }
