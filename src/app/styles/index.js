@@ -7,6 +7,8 @@ const styles = StyleSheet.create({
     height: height,
     flexDirection: 'column',
     justifyContent: 'space-around',
+    borderRightColor: 'rgb(0,0,0)',
+    borderRightWidth: StyleSheet.hairlineWidth,
   },
   drawercontent: {
     flex: 1,
@@ -15,7 +17,19 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-around',
     borderColor: 'rgb(0,0,0)',
-    borderWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+  },
+  drawertabs: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+  },
+  drawertab_icon: {
+    paddingLeft: 10,
+  },
+  drawertab_name: {
+    paddingLeft: 10,
   },
 });
 

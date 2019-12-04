@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import {connect} from 'react-redux';
 import Icon from 'react-native-ionicons';
 
@@ -9,12 +9,18 @@ export class AccountDetails extends Component {
   render() {
     return (
       <View style={styles.drawercontent}>
-        <View>
-          <Icon name="pin" />
+        <TouchableOpacity style={styles.drawertabs}>
+          <Icon name="person" />
           <Text> Account </Text>
-        </View>
-        <Text> Orders </Text>
-        <Text> Address Book </Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.drawertabs}>
+          <Icon name="document" />
+          <Text> Orders </Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.drawertabs}>
+          <Icon name="navigate" />
+          <Text> Address Book </Text>
+        </TouchableOpacity>
       </View>
     );
   }
